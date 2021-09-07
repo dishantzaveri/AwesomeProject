@@ -1,5 +1,5 @@
-import React, {useState, useEffect} from 'react'
-import { View, Text, StyleSheet, Button, TextInput, Alert } from 'react-native';
+import React, {useState} from 'react'
+import { View, StyleSheet, Button, TextInput, Alert } from 'react-native';
 import Contacts from 'react-native-contacts';
 
 export default function CreateContact({ navigation }) {
@@ -67,11 +67,6 @@ export default function CreateContact({ navigation }) {
                placeholder='Phone Number'
                keyboardType='number-pad'
                value={phoneNumber}
-               onChangeText={(text) => setPhoneNumbers((prevState) => {
-                  const newState = prevState.slice();
-                  newState[index] = text;
-                  return newState;
-               })}
             />
             </View>
          ))}

@@ -1,6 +1,5 @@
 import React from 'react'
 import { View, StyleSheet, Text } from 'react-native';
-
 import { getColorByLetter } from './getcolorbyletter';
 
 export default function SamplecontactCard({ contactInfo }) {
